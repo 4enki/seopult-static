@@ -1,0 +1,109 @@
+// изменим плёйсхолдер в лучшую сторону
+*::placeholder
+  color: #abb6ba
+  opacity: 1
+*::placeholder-shown
+  color: #abb6ba
+
+input,
+textarea,
+button
+  outline: none
+  font-family: $GeneralFontFamily
+
+.btn
+  padding: 14px 18px 15px 19px
+  display: block
+  border: 1px solid rgb(115, 120, 127)
+  border-radius: 2px
+  color: rgb(255, 255, 255)
+  font-size: 15px
+  font-weight: 400
+  line-height: 1
+  text-align: center
+  &.btn-red
+    .social-i
+      transition: 0.25s ease
+      fill: rgb(234, 12, 18)
+    &:hover
+      background-color: rgb(234, 12, 18)
+      border-color: rgb(234, 12, 18)
+      color: #ffffff
+      .social-i
+        transition: 0.25s ease
+        fill: rgb(255, 255, 255)
+    &:focus
+      background-color: rgb(185, 10, 14)
+      border-color: rgb(185,10,14)
+      .social-i
+        transition: 0.25s ease
+        fill: rgb(255, 255, 255)
+  &.btn-full
+    width: 100%
+  &.btn-orange
+    background-color: rgb(255, 153, 0)
+    color: #ffffff
+    border-color: rgb(255, 155, 0)
+  &.btn-outline
+    background-color: rgb(255, 255, 255)
+    border-color: rgb(215, 219, 223)
+    color: rgb(49, 52, 54)
+  &.btn-outline-orange
+    background-color: transparent
+    border-color: rgb(215, 219, 223)
+    color: rgb(49, 52, 54)
+  &.btn-outline-dark
+    color: #ffffff
+    border-color: rgb(115, 120, 127)
+    background-color: transparent
+  &.btn-outline-light
+    color: rgb(49, 52, 54)
+    border-color: rgb(215, 219, 223)
+    background-color: transparent
+  &.btn-inline
+    display: inline-block
+  &.btn-outline-light2
+    border-color: rgb(215, 219, 223)
+    color: rgb(49, 52, 54)
+  &:hover
+    background-color: rgb(255, 174, 0)
+    border-color: rgb(255, 174, 0)
+    color: #ffffff
+  &:focus
+    background-color: rgb(206, 125, 0)
+    border-color: rgb(206, 125, 0)
+    color: #ffffff
+button[disabled=disabled],
+button:disabled,
+.btn:disabled
+  cursor: not-allowed
+  pointer-events: none
+  background-color: rgb(233, 239, 240)
+  border-color: rgb(233, 239, 240)
+  &:hover
+    cursor: not-allowed
+
+.form-group
+  display: flex
+  display: block
+  margin-bottom: 20px
+  .form-control
+    display: block
+    width: 100%
+    background-color: rgb(255, 255, 255)
+    border: 1px solid rgb(233, 239, 240)
+    border-radius: 2px
+    padding: 13px 20px 14px 20px
+    color: rgb(49, 52, 54)
+    font-size: 15px
+    font-weight: 400
+    line-height: 15px
+    transition: 0.25s ease
+    &:hover
+      border: 1px solid rgb(215, 219, 223)
+    &:focus
+      border: 1px solid rgb(255, 153, 0)
+  textarea.form-control
+    min-height: 160px
+    max-height: 250px
+    resize: vertical

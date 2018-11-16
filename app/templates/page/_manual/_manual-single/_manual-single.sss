@@ -1,0 +1,81 @@
+.page
+  padding-bottom: 80px
+  padding-top: 59px
+  background-color: #fff
+.single-page
+  lost-flex-container: row
+  margin-bottom: 30px
+  .content
+    lost-column: 11/15 11 100px
+    h1
+      color: rgb(49, 52, 54)
+      font-family: 'Roboto'
+      font-size: 32px
+      font-weight: 300
+      line-height: 30px
+      margin-bottom: 40px
+    h2
+      color: rgb(49, 52, 54)
+      font-size: 18px
+      font-weight: 400
+      line-height: 30px
+      margin-bottom: 25px
+    p
+      color: rgb(115, 120, 127)
+      font-size: 15px
+      font-weight: 400
+      line-height: 30px
+      margin-bottom: 25px
+    h3
+      color: rgb(49, 52, 54)
+      font-size: 18px
+      font-weight: 400
+      line-height: 30px
+      margin-bottom: 25px
+      text-transform: uppercase
+  .sidebar
+    lost-column: 3/15 3 0
+    h3
+      color: rgb(49, 52, 54)
+      font-size: 18px
+      font-weight: 400
+      line-height: 20px
+      text-transform: uppercase
+.help-menu
+  list-style: none
+  margin: 15px 0 25px 0
+  padding: 0
+  &__item
+    margin-bottom: 5px
+    display: block
+  &__link
+    display: flex
+    align-items: center
+    align-content: center
+    transition: 0.3s ease
+    background-color: #fff
+    border-bottom: 0
+    border-radius: 2px
+    color: rgb(49, 52, 54)
+    padding: 15px 15px 20px 0
+    transition: 0.3s ease
+    .seopult-icon
+      fill: rgb(215, 219, 223)
+      transition: 0.3s ease
+    &.active
+      .seopult-icon
+        fill: rgb(255, 153, 0)
+    &:hover
+      color: rgb(255, 153, 0)
+      .seopult-icon
+        fill: rgb(255, 153, 0)
+  &__ico
+    width: 40px
+    margin-right: 15px
+    margin-top: 5px
+  &__link
+    flex: 1 100%
+    color: rgb(49, 52, 54)
+    font-size: 15px
+    font-weight: 400
+    line-height: 20px

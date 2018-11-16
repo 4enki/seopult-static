@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Блок для слайдеров</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/guides/guides.css">
+</head>
+<body class="guides">
+    <div class="wrap">
+        <include src="_guides-blocks/nav.html" slider="nav_sub_item__active"></include>
+        <div class="container">
+            <div class="content">
+                <div class="wrapper">
+                    <h1>Блок для слайдеров</h1>
+                    <div class="block">
+                        <div class="block_anchor"><a href="#01" name="01">01</a></div><!-- /.block_anchor -->
+                        <p></p>
+                    </div><!-- /.block -->
+                    <div class="block">
+                        <div class="block_anchor"><a href="#02" name="02">02</a></div><!-- /.block_anchor -->
+                        <div class="demo">
+                            <include src="../../blocks/_slider/_slider.html"></include>
+                        </div><!-- /.demo -->
+                    </div><!-- /.block -->
+
+                    <div class="block">
+                        <div class="block_anchor"><a href="#03" name="03">03</a></div><!-- /.block_anchor -->
+                        <p>Демонстрация работы слайдеров, расположенных на главной странице.</p>
+                        <p><a href="/assets/images/guides_slider-demo.gif" target="_blank">
+                            <img src="/assets/images/guides_slider-demo.gif" alt="" width="100%">
+                            <span>Гифка кликабельна</span>
+                        </a></p>
+                    </div><!-- /.block -->
+                </div><!-- /.wrapper -->
+            </div><!-- /.content -->
+        </div><!-- /.container -->
+    </div><!-- /.wrap -->
+</body>
+</html>

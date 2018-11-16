@@ -1,0 +1,154 @@
+.subscribe-page
+  padding-bottom: 80px
+  padding-top: 59px
+  background-color: #fff
+  .date
+    margin-bottom: 22px
+  .content
+    p.img
+      text-align: center
+      .img-description
+        display: block
+        color: rgb(115, 120, 127)
+        font-size: 13px
+        font-weight: 400
+        line-height: 30px
+  section
+    > h2:first-child
+      color: rgb(49, 52, 54)
+      font-family: $RobotoFontFamily
+      font-size: 32px
+      font-weight: 400
+      line-height: 30px
+      text-transform: initial
+.newssearch
+  background-color: rgb(247, 250, 250)
+  border-radius: 2px
+  overflow: hidden
+  margin-bottom: 20px
+  &__text
+    padding: 25px 37px 37px 37px
+    > h2
+      margin-bottom: 0
+    > p
+      margin-bottom: 0
+      padding: 0
+.tv-video
+  &_list
+    padding-top: 10px
+    padding-bottom: 0
+    display: block
+    display: flex
+    flex: 1 1 auto
+    flex-wrap: wrap
+  &__item
+    lost-column: 1/2 2 20px
+
+.tv-video
+  background-color: rgb(247, 250, 250)
+  border-radius: 2px
+  overflow: hidden
+  margin-bottom: 20px
+  &__cover
+    display: block
+    background-color: transparent
+    position: relative
+    transition: 0.3s ease
+    & > img
+      width: 100%
+      vertical-align: bottom
+  &__time
+    position: absolute
+    bottom: 14px
+    right: 20px
+    background-color: rgba(57, 60, 64, .8)
+    border-radius: 2px
+    color: rgb(255, 255, 255)
+    font-size: 12px
+    font-weight: 400
+    line-height: 15px
+    padding: 5px 5px 6px 6px
+    transition: 0.3s ease
+  &__description
+    padding: 20px 39px 27px 39px
+    h2
+      margin-bottom: 0
+  &_category
+    display: flex
+    align-items: center
+    align-content: center
+    margin-bottom: 20px
+    &__ico
+      margin-right: 19px
+      background-color: transparent
+      border-radius: 50%
+      size: 40px
+    &__name
+      color: rgb(115, 120, 127)
+      font-family: Arial
+      font-size: 15px
+      font-weight: 400
+      line-height: 30px
+  &__date
+    color: rgb(115, 120, 127)
+    font-family: Arial
+    font-size: 15px
+    font-weight: 400
+    line-height: 30px
+
+.comments-zone
+  display: block
+  padding: 37px 40px
+  background-color: rgb(247, 250, 250)
+  border-radius: 2px
+  overflow: hidden
+  margin-bottom: 40px
+
+.rating-box
+  padding-top: 10px
+  padding-bottom: 25px
+  display: block
+  display: flex
+  flex: 1 1 auto
+  flex-wrap: wrap
+  &__item
+    lost-column: 1/2 2 20px
+  &&--gray
+    .rating-subscribe
+      .hand-i
+        transition: 0.3s ease
+        fill: rgb(215, 219, 223)
+      &&-ok:hover
+        .hand-i
+          fill: rgb(137, 214, 25)
+      &&-bad:hover
+        .hand-i
+          fill: rgb(255, 80, 29)
+
+.rating-subscribe
+  background-color: rgb(255, 255, 255)
+  border: 1px solid rgb(215, 219, 223)
+  border-radius: 2px
+  padding: 20px 20px
+  display: flex
+  align-items: center
+  align-content: center
+  text-align: center
+  transition: 0.3s ease
+  .hand-i
+    transition: 0.3s ease
+  &&-ok:hover
+    border-color: rgb(137, 214, 25)
+  &&-bad:hover
+    border-color: rgb(255, 80, 29)
+  &__icon
+    align-self: center
+    margin: 0 auto
+    size: 40px
+    &&-ok
+      .hand-i
+        fill: rgb(137, 214, 25)
+    &&-bad
+      transform: rotate(180deg)
+      .hand-i
+        fill: rgb(255, 80, 29)

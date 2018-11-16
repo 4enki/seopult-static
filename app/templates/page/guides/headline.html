@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Расширенный блок заголовка</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/guides/guides.css">
+</head>
+<body class="guides">
+    <div class="wrap">
+        <include src="_guides-blocks/nav.html" headline="nav_sub_item__active"></include>
+        <div class="container">
+            <div class="content">
+                <div class="wrapper">
+                    <h1>Расширенный блок заголовка</h1>
+                    <div class="block">
+                        <div class="block_anchor"><a href="#01" name="01">01</a></div><!-- /.block_anchor -->
+                        <p></p>
+                    </div><!-- /.block -->
+                    <div class="block">
+                        <div class="block_anchor"><a href="#01" name="02">02</a></div><!-- /.block_anchor -->
+                        <div class="demo">
+                            <include src="../../blocks/_headline/_headline.html"></include>
+                        </div><!-- /.demo -->
+                    </div><!-- /.block -->
+                </div><!-- /.wrapper -->
+            </div><!-- /.content -->
+        </div><!-- /.container -->
+    </div><!-- /.wrap -->
+</body>
+</html>

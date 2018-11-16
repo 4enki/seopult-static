@@ -1,0 +1,147 @@
+a,
+.link
+  color: rgb(0, 145, 255)
+  text-decoration: none
+  border-bottom: 1px inset #b4cfea
+  transition: 0.3s ease
+  &:hover
+    color: rgb(237,56,65)
+    border-color: #fbb
+    transition: 0s ease
+  //&:visited
+  //  color: #ff6600
+  //  border-color: #ff6600
+  &.pseudo
+    color: rgb(0,114,186)
+    border-bottom: 1px dashed rgba(0, 114, 186, .5)
+    transition: 0.3s ease
+    &:hover
+      cursor: pointer
+      color: rgb(237,56,65)
+      border-color: #fbb
+      transition: 0s ease
+  &.dark
+    color: rgba(0, 0, 0, 1)
+    border-bottom: 1px solid rgba(0, 0, 0, .5)
+    &:hover
+      color: #d04000
+      border-color: rgba(208, 64, 0, .5)
+      transition: 0s ease
+  &.lite
+    color: rgba(255, 255, 255, 1)
+    border-bottom: 1px solid rgba(255, 255, 255, .5)
+    &:hover
+      color: rgba(242, 242, 1, 1)
+      border-color: rgba(242, 242, 1, .5)
+      transition: 0s ease
+// показываем иконку у внешних ссылок
+.external[target="_blank"]
+  &:after
+    content: ''
+    size: 11px
+    background-image: svg('external-link.svg', '[fill]: #a3a3a3')
+    background-position: 50% 50%
+    text-indent: -9999px
+    background-repeat: no-repeat
+    display: inline-block
+    overflow: hidden
+    margin: 0 0 0 5px
+    transition: 0.3s ease
+  &:hover
+    &:after
+      background-image: svg('external-link.svg', '[fill]: #ed3841')
+
+h1
+  color: rgb(255, 255, 255)
+  font-family: $RobotoFontFamily
+  font-size: 32px
+  font-weight: 300
+  line-height: 30px
+
+h2
+  color: rgb(49, 52, 54)
+  font-family: Arial
+  font-size: 18px
+  font-weight: 300
+  line-height: 30px
+  &&.textup
+    text-transform: uppercase
+  > a
+    color: rgb(47, 50, 49)
+    font-family: Arial
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
+    border-bottom: 1px solid rgb(47, 50, 49)
+    &:hover
+      border-bottom: 0
+
+h3
+  color: rgb(0, 0, 0)
+  font-family: Arial
+  font-size: 18px
+  font-weight: 400
+  line-height: 30px
+
+abbr[title]
+  border-bottom: 1px dashed #ccc
+  text-decoration: none
+  cursor: help
+
+// штука с подсказкой
+.popover
+  display: none
+  position: absolute
+  left: -10px
+  bottom: 39px
+  padding: 17px 19px 17px 19px
+  width: 410px
+  height: auto
+  background-color: rgb(255, 255, 255)
+  border-radius: 2px
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05)
+  box-sizing: content-box
+  font-size: 16px
+  z-index: 10
+  .arrow
+    border-width: 11px
+  .arrow,
+  .arrow:after
+    position: absolute
+    display: block
+    width: 0
+    height: 0
+    border-color: transparent
+    border-style: solid
+  &.top
+    .arrow
+      bottom: -10px
+      left: 20px
+      margin-left: -11px
+      border-top-color: #fff
+      border-bottom-width: 0
+      &:after
+        bottom: 1px
+        margin-left: -10px
+        content: ''
+        border-top-color: #fff
+        border-bottom-width: 0
+  .arrow:after
+  //top: 1px
+    margin-left: -10px
+    content: ''
+    border-top-width: 0
+    border-bottom-color: #fff
+  .arrow:after
+    content: ""
+    border-width: 10px
+  &.__active
+    display: block
+  p
+    margin: 0
+    padding: 0
+    color: rgb(115, 120, 127)
+    font-size: 15px
+    line-height: 20px
+p.center
+  text-align: center

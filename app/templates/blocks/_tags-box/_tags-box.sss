@@ -1,0 +1,65 @@
+.tags-box
+  display: block
+  width: 100%
+  padding-top: 0
+  padding-bottom: 50px
+  .box__header
+    clear: fix
+    h2
+      float: left
+      margin: 0
+      color: rgb(49, 52, 54)
+      font-family: Arial
+      font-size: 18px
+      font-weight: 400
+      line-height: 36px
+      text-transform: uppercase
+    .btn-right
+      float: right
+      .btn
+        display: inline-block
+        margin-right: 20px
+        svg
+          position: relative
+          top: 1px
+        &:last-child
+          margin-right: 0
+  &__list
+    display: block
+    padding-top: 40px
+  &__item
+    display: inline-block
+    margin-right: 16px
+    margin-bottom: 20px
+    &:last-child
+      margin-right: 0
+  .tag-link
+    color: #313436
+    font-family: Arial
+    font-size: 15px
+    font-weight: 400
+    line-height: 1
+    padding: 14px 20px
+    background-color: transparent
+    border-radius: 2px
+    display: block
+    border: 1px solid #d7dbdf
+    &:hover
+      background-color: rgb(255, 174, 0)
+      border-color: rgb(255, 174, 0)
+      color: #ffffff
+    &--all
+      &:hover
+        .tags-dots
+          fill: #fff
+  .expand-link
+    color: #313436
+    font-family: Arial
+    font-size: 15px
+    font-weight: 400
+    line-height: 30px
+    border-bottom: 0
+    .expand-link__ico
+      margin-left: 10px
+      display: inline-block
+      transform: rotate(-90deg)

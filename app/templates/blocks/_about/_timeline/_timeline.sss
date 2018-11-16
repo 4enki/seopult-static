@@ -1,0 +1,71 @@
+.company-timeline
+  background-color: rgb(233, 239, 240)
+  display: block
+  padding-top: 80px
+  padding-bottom: 80px
+  h2
+    color: rgb(49, 52, 54)
+    font-family: $RobotoFontFamily
+    font-size: 32px
+    font-weight: 300
+    line-height: 30px
+
+.timeline
+  position: relative
+  overflow: hidden
+  background-color: #fff
+  min-height: 100vh
+  margin: 0
+  &:before
+    content: ''
+    position: absolute
+    top: 0px
+    left: 50%
+    bottom: 0px
+    transform: translateX(-50%)
+    width: 2px
+    background-color: rgb(215, 219, 223)
+  .entries
+    width: calc(100% - 80px)
+    max-width: 800px
+    margin: auto
+    position: relative
+    left: -5px
+    .entry
+      width: calc(50% - 80px)
+      float: left
+      padding: 20px
+      clear: both
+      text-align: right
+      background-color: red
+      &:not(:first-child)
+        margin-top: -60px
+      .title
+        font-size: 32px
+        margin-bottom: 12px
+        position: relative
+        color: #fff
+        &:before
+          content: ''
+          position: absolute
+          width: 20px
+          height: 20px
+          background-color: rgb(215, 219, 223)
+          border-radius: 100%
+          top: 50%
+          transform: translateY(-50%)
+          right: -115px
+          z-index: 1000
+        &.big:before
+          width: 80px
+          height: 80px
+          background-color: rgb(215, 219, 223)
+          transform: translate(30px, -50%)
+      &:nth-child(2n)
+        text-align: left
+        float: right
+        .title
+          &:before
+            left: -105px
+          &.big:before
+            transform: translate(-30px,-50%)

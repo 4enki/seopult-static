@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="9" height="16" viewBox="0 0 9 16">
+    <defs>
+        <style>
+            .right-i {
+            fill: #d7dbdf;
+            fill-rule: evenodd;
+            }
+        </style>
+    </defs>
+    <path d="M7.591,-0.001 L0.286,7.292 C-0.105,7.683 -0.105,8.316 0.286,8.706 L7.592,15.999 L9.008,14.585 L2.411,7.999 L9.007,1.413 L7.591,-0.001 Z" class="pagination-i right-i" transform="translate(4.500375, 7.999000) rotate(180.000000) translate(-4.500375, -7.999000) " />
+</svg>

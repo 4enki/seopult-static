@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="10" height="20" viewBox="0 0 10 20">
+  <defs>
+    <style>
+      .fb-i {
+        fill: #babcc2;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path d="M6.424,19.999 L6.424,11.169 L9.276,11.169 L9.990,7.489 L6.424,7.489 L6.459,4.806 C6.459,3.777 6.736,3.076 8.166,3.076 L9.990,3.075 L9.990,0.131 C9.674,0.088 8.556,0.008 7.297,0.008 C4.667,0.008 2.867,1.664 2.867,4.706 L2.867,7.489 L0.005,7.489 L0.005,11.169 L2.867,11.169 L2.867,19.999 L6.424,19.999 Z" class="social-i fb-i"/>
+</svg>
